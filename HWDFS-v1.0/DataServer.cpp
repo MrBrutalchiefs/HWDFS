@@ -81,9 +81,6 @@ public:
 
 int main() {
     int port = 9090;
-    cout << "请输入服务器运行的端口号(9091-9094): ";
-    cin >> port;
-
 
     // 服务器一次允许6个连接
     int workerCount = setting->total;
