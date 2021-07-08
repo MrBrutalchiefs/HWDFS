@@ -76,8 +76,6 @@ public:
 
 int main(int argc, char **argv) {
     int port = 9090;
-    cout << "请输入奇偶校验服务器运行的端口号(9095-9096): ";
-    cin >> port;
 
     /*
     std::shared_ptr<StoreServiceHandler> handler(new StoreServiceHandler());
