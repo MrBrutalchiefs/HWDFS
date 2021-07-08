@@ -40,7 +40,3 @@ target_link_libraries(parity_server libmysqlcppconn.so)
 add_executable(client Client.cpp)
 target_link_libraries(client common)
 target_link_libraries(client scheme)
-
-add_executable(local_client LocalClient.cpp)
-target_link_libraries(local_client common)
-target_link_libraries(local_client scheme)
