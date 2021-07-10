@@ -10,6 +10,9 @@ endif()
 include_directories(${Boost_INCLUDE_DIRS})
 
 # 引入内部链接库
+add_subdirectory(${PROJECT_SOURCE_DIR}/robin-map)
+include_directories(${PROJECT_SOURCE_DIR}/robin-map/include)
+
 add_subdirectory(${PROJECT_SOURCE_DIR}/service)
 include_directories(${PROJECT_SOURCE_DIR}/service/include)
 
