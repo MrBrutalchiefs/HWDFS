@@ -33,12 +33,10 @@ link_libraries(/usr/local/lib/libthrift-0.13.0.so)
 add_executable(data_server DataServer.cpp)
 target_link_libraries(data_server common)
 target_link_libraries(data_server scheme)
-target_link_libraries(data_server libmysqlcppconn.so)
 
 add_executable(parity_server ParityServer.cpp)
 target_link_libraries(parity_server common)
 target_link_libraries(parity_server scheme)
-target_link_libraries(parity_server libmysqlcppconn.so)
 
 add_executable(client Client.cpp)
 target_link_libraries(client common)
