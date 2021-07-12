@@ -9,7 +9,7 @@
   * [gf-complete](https://github.com/ceph/gf-complete)
   * [ReedSolomon](https://github.com/MrZander/ReedSolomon)
 * [TSCNS](https://github.com/MengRao/tscns)
-* [Thrift](https://github.com/apache/thrift)
+* [Apache Thrift](https://github.com/apache/thrift)
 * [TinyXML](https://github.com/icebreaker/TinyXML)
 * [Robin-Map](https://github.com/Tessil/robin-map)
 * [MSR Cambridge Traces](http://iotta.snia.org/traces/388)
