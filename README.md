@@ -1,7 +1,7 @@
 # Introduction
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on DDBHW, we implement a prototype of distributed file system (called HWDFS), which uses DDBHW to speed up partial writes. The system can be deployed on multiple machines that are mounted with local file systems (e.g. ext3). The interface of HWDFS is patterned after the UNIX file system, faithfulness to standards is sacrificed for ease of implementation, since the goal of HWDFS is to evaluate the efficiency of DDBHW.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HWDFS is a distributed file system for high availability, high performance, and low cost. It is a linux-based file system that provides high reliability and concurrent access through backup and erasure coding technology. Developers can expand the update scheme with custom erasure codes by implementing the API interface provided by the system. At present, the system has implemented some of the most advanced update schemes. HWDFS is mainly designed for large files larger than 64MB.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HWDFS splits file content into fixed-size data chunks (typically 128 MB, but it can be set by users), it stores each chunk at a single data node. HWDFS encodes each k consecutive data chunks of a file to generate m parity chunks. The size of a parity chunk is the same as that of a data chunk, each parity chunk is independently stored on a single parity node. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The project is still in the development stage, many bugs have not been fixed, and it is still unable to meet all the scenarios that may appear in the real world. If you find them, please feel free to submit bugs. If you have any questions or feedback, please contact and join us, we appreciate your contribution.
 
 # Reference
 * Erasure Code:
@@ -23,4 +23,4 @@
     ```
 3. Use `./client -h` to view all commands on the client.
 4. Use `./data_server` to run data node, use `./parity_server` to run parity node
-  * you can change update scheme, IP address and port in `config.xml`
+5. you can change **Update Scheme**, **IP Address** and **Port** in `config.xml`
